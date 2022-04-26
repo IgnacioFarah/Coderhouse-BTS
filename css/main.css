@@ -1,0 +1,472 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+img {
+    border: solid;
+    background-color: black;
+}
+
+.title-1 {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: white;
+    font-size: 17px;
+}
+
+.logo-title {
+    text-align: center;
+}
+
+
+nav div {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ul li a {
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-image: url(../Img/Fondo-bts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.foto-portada img {
+    width: 200px;
+}
+
+.foto-portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-text p {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    text-overflow: clip;
+    margin: 20px 20px;
+    text-align: justify;
+}
+
+
+.contenedor-caras img {
+    height: 100px;
+    margin: 0px 2px;
+}
+
+.contenedor-caras p {
+    text-align: center;
+    color: white;
+}
+
+
+/* musica */
+h3 {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.ordenar{
+    margin: 10px 20px;
+}
+
+.ordenar p {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.contenedor-temas p {
+    margin: 10px 0px;
+}
+
+.contenedor-temas iframe {
+    width: 280px;
+    margin: 0px 20px;
+}
+
+
+/* footer */
+footer {
+    height: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: flex;
+    justify-content: end;
+    align-items: flex-end;
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.footer-logos img {
+    padding: 0px 1px;
+    width: 24px;
+}
+
+.footer-frase p {
+    color: white;
+    font-family: 'Beau Rivage', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px 15px;
+}
+
+.footer-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Biografia */
+.main-general img {
+    width: 260px;
+}
+
+main h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-general {
+    text-align: center;
+}
+
+.main-general p {
+    text-align: justify;
+    margin: 20px 10px;
+    color: white;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.main-general div {
+    background-color: rgba(0, 0, 0, 0.486)
+}
+
+/* Integrantes */
+
+h4 {
+    color: white;
+    font-family: 'EB Garamond', serif;
+}
+
+.main-integrantes img {
+    width: 250px;
+}
+
+.main-integrantes ul {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+
+.main-integrantes p {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    margin: 5px 20px;
+    text-align: justify;
+}
+
+
+
+/* Videos */
+
+.section-videos h3 {
+    text-align: center;
+}
+
+.section-videos p {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+.section-videos iframe {
+    width: 280px;
+}
+
+/* grids */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.foto-portada img {
+    margin: 20px;
+}
+
+.contenedor-caras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* Biografia */
+.biografia {
+    display: grid;
+}
+
+/* musica */
+.contenedor-temas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 5px;
+}
+
+/* videos */
+.section-videos {
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+}
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contenedor-text p {
+        margin: 20px 20px;
+    }
+
+    .foto-portada img {
+        width: 300px;
+    }
+
+    .foto-portada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+    .contenedor-caras img {
+        height: 200px;
+        margin: 0px 15px;
+    }
+
+    .contenedor-caras {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .footer-logos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer-logos img {
+        padding: 0px 5px;
+        width: 42px;
+    }
+
+    .footer-frase p {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .footer-contenido {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Biografia */
+
+    .main-general img {
+        width: 450px;
+    }
+
+    .main-general p {
+        margin: 20px 20px;
+    }
+
+    /* integrantes */
+    .main-integrantes img {
+        width: 200px;
+    }
+
+    .main-integrantes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .main-integrantes ul {
+        display: flex;
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    /* musica */
+
+    .contenedor-temas iframe {
+        width: 600px;
+        margin: 0px 60px;
+        
+    }
+
+    /* videos */
+    
+    .section-videos iframe {
+        width: 600px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contenedor-text p {
+        margin: 20px 100px;
+    }
+
+
+    .foto-portada img {
+        width: 300px;
+    }
+
+    .foto-portada {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+
+    .contenedor-caras {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    /* integrantes */
+
+    .main-integrantes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    /* musica */
+
+    .contenedor-temas iframe {
+        width: 700px;
+        margin: 0px 150px;
+    }
+
+
+}
+
+@media screen and (min-width: 1366px) {
+
+
+    .foto-portada {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+    .contenedor-caras {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+
+    /* musica */
+    .contenedor-temas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+    }
+
+    .contenedor-temas iframe {
+        width: 560px;
+        margin: 0px 30px;
+    }
+}
