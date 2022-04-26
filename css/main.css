@@ -450,11 +450,30 @@ footer {
         justify-content: space-around;
     }
 
+    .foto-portada img {
+        transition: all .3 ease-in-out;
+    }
+    .foto-portada img:hover {
+        transform: scale(0.9);
+    }
+
 
     .contenedor-caras {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+
+    .contenedor-caras img {
+        transition: all .3 ease-in-out;
+    }
+
+    .contenedor-caras img:hover {
+        transform: scale(1.1);
+    }
+    
+    .contenedor-caras p {
+        margin-top: 5px;
     }
 
 
