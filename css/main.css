@@ -27,6 +27,7 @@ h1 {
 
 .logo-title {
     text-align: center;
+    width: 34px;
 }
 
 
@@ -100,7 +101,7 @@ h3 {
     text-align: center;
 }
 
-.ordenar{
+.ordenar {
     margin: 10px 20px;
 }
 
@@ -184,10 +185,6 @@ main h2 {
     color: white;
     font-family: 'EB Garamond', serif;
 
-}
-
-.main-general div {
-    background-color: rgba(0, 0, 0, 0.486)
 }
 
 /* Integrantes */
@@ -286,7 +283,7 @@ footer {
 /* videos */
 .section-videos {
     display: grid;
-    grid-template-columns:repeat(1,1fr) ;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 
@@ -386,11 +383,11 @@ footer {
     .contenedor-temas iframe {
         width: 600px;
         margin: 0px 60px;
-        
+
     }
 
     /* videos */
-    
+
     .section-videos iframe {
         width: 600px;
     }
@@ -431,7 +428,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
+
     /* musica */
 
     .contenedor-temas iframe {
@@ -443,8 +440,6 @@ footer {
 }
 
 @media screen and (min-width: 1366px) {
-
-
     .foto-portada {
         display: flex;
         justify-content: space-around;
@@ -455,12 +450,7 @@ footer {
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(1, 1fr);
     }
-    .foto-portada img {
-        transition: all .3 ease-in-out;
-    }
-    .foto-portada img:hover {
-        transform: scale(0.9);
-    }
+
     .contenedor-caras {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
@@ -468,14 +458,6 @@ footer {
     }
 
 
-    .contenedor-caras img {
-        transition: all .3 ease-in-out;
-    }
-
-    .contenedor-caras img:hover {
-        transform: scale(1.1);
-    }
-    
     .contenedor-caras p {
         margin-top: 5px;
     }
@@ -492,4 +474,97 @@ footer {
         width: 560px;
         margin: 0px 30px;
     }
+
+    /* integrantes */
+    .main-integrantes {
+        margin: 10px 20px;
+    }
+
+}
+
+
+/* Aca van mis Hovers */
+
+
+
+/* Index */
+
+
+.foto-portada img {
+    transition: all .3 ease-in-out;
+}
+
+.foto-portada img:hover {
+    transform: scale(0.9);
+}
+
+.contenedor-caras img {
+    transition: all .3 ease-in-out;
+}
+
+.contenedor-caras img:hover {
+    transform: scale(1.1);
+}
+
+/* Integrantes */
+.main-integrantes img {
+    transition: all .3 ease-in-out;
+}
+
+.main-integrantes img:hover {
+    transform: scale(1.2);
+}
+
+/* biografia */
+
+.main-general p {
+    transition: all .3 ease-in-out;
+}
+
+.main-general p:hover {
+    background-color: rgba(0, 0, 0, 0.486)
+}
+
+/* Musica  */
+h3 {
+    transition: all .3 ease-in-out;
+}
+
+h3:hover {
+    color: orange
+}
+
+
+ul li a {
+    transition: all .3 ease-in-out
+}
+
+ul li a:hover {
+    font-family: 'Courier Prime', monospace;
+    text-decoration: overline;
+}
+
+.logo-title:hover {
+    animation-name: movimiento-logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+@keyframes movimiento-logo {
+
+    25% {
+        width: 44px;
+    }
+
+
+    50% {
+        width: 54px;
+    }
+
+    100% {
+        width: 34px;
+    }
+
+
 }
