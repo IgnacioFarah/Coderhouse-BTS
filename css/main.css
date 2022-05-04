@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .title-header{
     height: 80px;
 
@@ -12,6 +13,8 @@ body {
     width: 100%;
     background-color: black;
 }
+
+
 
 .carousel-inner img {
     max-height: 660px;
@@ -126,41 +129,28 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    margin-top: 20px;
 }
 
-.footer-logos {
-    display: flex;
-    flex-direction: flex;
-    justify-content: end;
-    align-items: flex-end;
-    position: relative;
-    width: 100%;
-    padding: 0px 10px;
+footer svg {
+    color: white  ;
+    height: 24px;
+    margin: 20px 50px;
 }
 
-.footer-logos img {
-    padding: 0px 1px;
-    width: 24px;
-}
-
-.footer-frase p {
-    color: white;
-    font-family: 'Beau Rivage', cursive;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+footer p{
     font-size: 20px;
-    text-align: justify;
-    margin: 15px 15px;
+    text-align: center;
 }
 
-.footer-contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+
+hr {
+    color: white;
+    width: 80%;
+    margin:0px 30px
 }
+
 
 /* Biografia */
 .main-general img {
@@ -332,6 +322,18 @@ footer {
         align-items: center;
     }
 
+    footer svg {
+        color: white  ;
+        height: 40px;
+        margin: 20px 160px;
+    }
+    
+    hr {
+        color: white;
+        width: 80%;
+        margin:0px 80px
+    }
+
 
     /* Biografia */
 
@@ -376,6 +378,7 @@ footer {
 
 
 
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -395,6 +398,18 @@ footer {
         grid-template-rows: repeat(2, 1fr);
     }
 
+    footer svg {
+        color: white  ;
+        height: 40px;
+        margin: 20px 0px;
+    }
+    
+    hr {
+        color: white;
+        width: 80%;
+        margin:0px 100px
+    }
+
     /* integrantes */
 
     .main-integrantes {
@@ -409,6 +424,9 @@ footer {
         width: 700px;
         margin: 0px 150px;
     }
+
+
+    
 
 
 }
@@ -436,6 +454,11 @@ footer {
         margin-top: 5px;
     }
 
+    footer svg {
+        color: white  ;
+        height: 40px;
+        margin: 20px 40px;
+    }
 
     /* musica */
     .contenedor-temas {
@@ -486,7 +509,7 @@ footer {
 }
 
 .main-integrantes img:hover {
-    transform: scale(1.2);
+    transform: scale(0.9);
 }
 
 /* biografia */
@@ -516,33 +539,4 @@ ul li a {
 ul li a:hover {
     font-family: 'Courier Prime', monospace;
     text-decoration: overline;
-}
-
-.logo-title{
-    animation-name: movimiento-logo;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-duration: 3s;
-
-}
-
-@keyframes movimiento-logo {
-
-    25% {
-        transform: scale(1.4);
-        transition: 3s;
-    }
-
-
-    50% {
-        transform: scale(1.2);
-        transition: 3s;
-    }
-
-    100% {
-        transform: scale(1.6);
-        transition: 3s;
-    }
-
-
 }
