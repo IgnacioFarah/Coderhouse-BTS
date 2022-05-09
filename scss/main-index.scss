@@ -1,0 +1,47 @@
+.carousel-inner img {
+    max-height: 660px;
+}
+
+img {
+    border: solid;
+    background-color: black;
+}
+
+main {
+    background-image: url(../Img/Fondo-bts.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.foto-portada {
+    img {
+        width: 200px;
+    }
+}
+
+.contenedor-text {
+    p {
+        color: $color-text;
+        font-family: 'EB Garamond', serif;
+        text-overflow: clip;
+        margin: 20px 20px;
+        text-align: justify;
+    }
+}
+
+.contenedor-caras {
+
+    img {
+        height: 100px;
+        margin: 0px 2px;
+
+    }
+
+    p {
+        text-align: center;
+        color: $color-text;
+    }
+
+}

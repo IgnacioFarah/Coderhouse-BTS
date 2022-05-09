@@ -1,0 +1,57 @@
+/* grids */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.foto-portada {
+    img {
+        margin: 20px;
+    }
+}
+
+.contenedor-caras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+}
+
+/* Biografia */
+.biografia {
+    display: grid;
+}
+
+/* musica */
+.contenedor-temas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 5px;
+}
+
+/* videos */
+.section-videos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}

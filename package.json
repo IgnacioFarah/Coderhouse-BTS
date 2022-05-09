@@ -1,0 +1,25 @@
+{
+  "name": "coderhouse-bts",
+  "version": "1.0.0",
+  "description": "Pagina de bts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/mains.scss css/mains.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnacioFarah/Coderhouse-BTS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnacioFarah/Coderhouse-BTS/issues"
+  },
+  "homepage": "https://github.com/IgnacioFarah/Coderhouse-BTS#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
