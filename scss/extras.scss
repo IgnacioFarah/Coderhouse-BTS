@@ -1,0 +1,27 @@
+// Mixin y maps
+@mixin size ($padding, $margin) {
+    margin: $margin;
+    padding: $padding;
+}
+
+.ordenar {
+    @include size (0px 2px, 10px 15px);
+}
+
+
+// Maps
+$redes: (
+    youtube: red,
+    twitter: rgb(64, 192, 243),
+    facebook: rgb(33, 33, 223),
+    instagram: rgb(224, 95, 20)
+
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color:$color
+    }
+    
+}
+

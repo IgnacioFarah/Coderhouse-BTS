@@ -1,477 +1,347 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .title-header {
-  height: 80px;
-}
+  height: 80px; }
 
 body {
   width: 100%;
-  background-color: black;
-}
+  background-color: black; }
 
 .title-1 {
-  text-align: center;
-}
+  text-align: center; }
 
 h1 {
   font-family: 'EB Garamond', serif;
   font-family: 'Rubik Moonrocks', cursive;
   color: white;
-  font-size: 17px;
-}
+  font-size: 17px; }
 
 .logo-title {
   text-align: center;
-  width: 34px;
-}
+  width: 34px; }
 
 nav div {
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 
 ul li {
-  list-style: none;
-}
-
-ul li a {
-  color: white;
-  text-decoration: none;
-  color: black;
-}
+  list-style: none; }
+  ul li a {
+    color: white;
+    text-decoration: none;
+    color: black; }
 
 .carousel-inner img {
-  max-height: 660px;
-}
+  max-height: 660px; }
 
 img {
   border: solid;
-  background-color: black;
-}
+  background-color: black; }
 
 main {
   background-image: url(../Img/Fondo-bts.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-}
+  background-position: center; }
 
 .foto-portada img {
-  width: 200px;
-}
+  width: 200px; }
 
 .contenedor-text p {
   color: white;
   font-family: 'EB Garamond', serif;
   text-overflow: clip;
   margin: 20px 20px;
-  text-align: justify;
-}
+  text-align: justify; }
 
 .contenedor-caras img {
   height: 100px;
-  margin: 0px 2px;
-}
+  margin: 0px 2px; }
 
 .contenedor-caras p {
   text-align: center;
-  color: white;
-}
+  color: white; }
 
+/* musica */
 h3 {
-  color: white;
-  font-family: 'EB Garamond', serif;
-  text-align: center;
-}
-
-.ordenar {
-  margin: 10px 20px;
-}
+  text-align: center; }
 
 .ordenar p {
   color: white;
   font-family: 'EB Garamond', serif;
   font-size: 20px;
-  text-align: justify;
-}
+  text-align: justify; }
 
 .contenedor-temas p {
-  margin: 10px 0px;
-}
+  margin: 10px 0px; }
 
 .contenedor-temas iframe {
-  width: 280px;
-  margin: 0px 20px;
-}
+  width: 280px; }
 
 footer {
   height: 70px;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  margin-top: 20px;
-}
-
-footer svg {
-  color: white;
-  height: 24px;
-  margin: 20px 50px;
-}
-
-footer p {
-  font-size: 20px;
-  text-align: center;
-}
+  margin-top: 20px; }
+  footer svg {
+    color: white;
+    height: 24px;
+    margin: 20px 50px; }
+  footer p {
+    font-size: 20px;
+    text-align: center; }
 
 hr {
   color: white;
   width: 80%;
-  margin: 0px 30px;
-}
+  margin: 0px 30px; }
 
 .main-general {
-  text-align: center;
-}
+  text-align: center; }
+  .main-general img {
+    width: 260px; }
+  .main-general p {
+    text-align: justify;
+    margin: 20px 10px;
+    color: white;
+    font-family: 'EB Garamond', serif; }
 
-.main-general img {
-  width: 260px;
-}
-
-.main-general p {
-  text-align: justify;
-  margin: 20px 10px;
+main h2, main h3, main h4, main .section-videos h3, .section-videos main h3 {
   color: white;
-  font-family: 'EB Garamond', serif;
-}
+  margin-bottom: 20px; }
 
-main h2 {
-  color: white;
-  margin-bottom: 20px;
-}
-
-h4 {
-  color: white;
-  font-family: 'EB Garamond', serif;
-}
-
+/* integrantes */
 .main-integrantes img {
-  width: 250px;
-}
+  width: 250px; }
 
 .main-integrantes ul {
   text-align: center;
-  margin: 10px 0px;
-}
+  margin: 10px 0px; }
 
 .main-integrantes p {
   color: white;
   font-family: 'EB Garamond', serif;
   margin: 5px 20px;
-  text-align: justify;
-}
+  text-align: justify; }
 
 /* Videos */
-.section-videos h3 {
-  text-align: center;
-}
-
 .section-videos p {
   color: white;
   font-family: 'EB Garamond', serif;
   margin: 15px 0px;
-  text-align: justify;
-}
+  text-align: justify; }
 
 .section-videos iframe {
-  width: 280px;
-}
+  width: 280px; }
 
 /* grids */
 body {
   display: grid;
-  grid-template-areas: "header"
-    "nav"
-    "main"
-    "footer";
-}
+  grid-template-areas: "header" "nav" "main" "footer"; }
 
 header {
-  grid-area: header;
-}
+  grid-area: header; }
 
 nav {
-  grid-area: nav;
-}
+  grid-area: nav; }
 
 main {
-  grid-area: main;
-}
+  grid-area: main; }
 
 footer {
-  grid-area: footer;
-}
+  grid-area: footer; }
 
 .foto-portada img {
-  margin: 20px;
-}
+  margin: 20px; }
 
 .contenedor-caras {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  justify-items: center;
-}
+  justify-items: center; }
 
 /* Biografia */
 .biografia {
-  display: grid;
-}
+  display: grid; }
 
 /* musica */
 .contenedor-temas {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 5px;
-}
+  grid-column-gap: 5px; }
 
 /* videos */
 .section-videos {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-}
+  grid-template-columns: repeat(1, 1fr); }
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 25px;
-  }
-
+    font-size: 25px; }
   .contenedor-text p {
-    margin: 20px 20px;
-  }
-
+    margin: 20px 20px; }
   .foto-portada img {
-    width: 300px;
-  }
-
+    width: 300px; }
   .contenedor-caras {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .contenedor-caras img {
-    height: 200px;
-    margin: 0px 15px;
-  }
-
+    grid-template-rows: repeat(3, 1fr); }
+    .contenedor-caras img {
+      height: 200px;
+      margin: 0px 15px; }
   .footer-logos {
     display: flex;
-    flex-direction: row;
-  }
-
-  .footer-logos img {
-    padding: 0px 5px;
-    width: 42px;
-  }
-
+    flex-direction: row; }
+    .footer-logos img {
+      padding: 0px 5px;
+      width: 42px; }
   .footer-frase p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 30px;
-  }
-
+    font-size: 30px; }
   .footer-contenido {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-  }
-
+    align-items: center; }
   footer svg {
     color: white;
     height: 40px;
-    margin: 20px 60px;
-  }
-
+    margin: 20px 60px; }
   hr {
     color: white;
     width: 80%;
-    margin: 0px 80px;
-  }
-
+    margin: 0px 80px; }
   /* Biografia */
   .main-general img {
-    width: 450px;
-  }
-
+    width: 450px; }
   .main-general p {
-    margin: 20px 20px;
-  }
-
+    margin: 20px 20px; }
   /* integrantes */
   .main-integrantes {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .main-integrantes img {
-    width: 200px;
-  }
-
-  .main-integrantes ul {
-    display: flex;
-    text-align: center;
-    margin: 10px 0px;
-  }
-
+    grid-template-columns: repeat(1, 1fr); }
+    .main-integrantes img {
+      width: 200px; }
+    .main-integrantes ul {
+      display: flex;
+      text-align: center;
+      margin: 10px 0px; }
   /* musica */
   .contenedor-temas iframe {
     width: 600px;
-    margin: 0px 60px;
-  }
-
+    margin: 0px 60px; }
   /* videos */
   .section-videos iframe {
-    width: 600px;
-  }
-}
+    width: 600px; } }
 
 @media screen and (min-width: 1024px) {
   .contenedor-text p {
-    margin: 20px 100px;
-  }
-
+    margin: 20px 100px; }
   .foto-portada img {
-    width: 300px;
-  }
-
+    width: 300px; }
   .contenedor-caras {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-
+    grid-template-rows: repeat(2, 1fr); }
   footer svg {
     color: white;
     height: 40px;
-    margin: 20px 0px;
-  }
-
+    margin: 20px 0px; }
   hr {
     color: white;
     width: 80%;
-    margin: 0px 100px;
-  }
-
+    margin: 0px 100px; }
   /* integrantes */
   .main-integrantes {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+    grid-template-columns: repeat(2, 1fr); }
   /* musica */
   .contenedor-temas iframe {
     width: 700px;
-    margin: 0px 150px;
-  }
-}
+    margin: 0px 150px; } }
 
 @media screen and (min-width: 1366px) {
   .foto-portada {
     display: flex;
-    justify-content: space-around;
-  }
-
+    justify-content: space-around; }
   .contenedor-caras {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-  }
-
-  .contenedor-caras p {
-    margin-top: 5px;
-  }
-
+    grid-template-rows: repeat(1, 1fr); }
+    .contenedor-caras p {
+      margin-top: 5px; }
   footer svg {
     color: white;
     height: 40px;
-    margin: 20px 40px;
-  }
-
+    margin: 20px 40px; }
   /* musica */
   .contenedor-temas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5px;
-  }
-
-  .contenedor-temas iframe {
-    width: 520px;
-    margin: 0px 30px;
-  }
-
+    grid-column-gap: 5px; }
+    .contenedor-temas iframe {
+      width: 520px;
+      margin: 0px 30px; }
   /* integrantes */
   .main-integrantes {
-    margin: 10px 20px;
-  }
-}
+    margin: 10px 20px; } }
 
 /* Aca van mis Hovers */
 /* Index */
 .foto-portada img {
-  transition: all .3 ease-in-out;
-}
+  transition: all .3 ease-in-out; }
 
 .foto-portada:hover {
-  transform: scale(0.9);
-}
+  transform: scale(0.9); }
 
 .contenedor-caras img {
-  transition: all .3 ease-in-out;
-}
-
-.contenedor-caras img:hover {
-  transform: scale(1.1);
-}
+  transition: all .3 ease-in-out; }
+  .contenedor-caras img:hover {
+    transform: scale(1.1); }
 
 /* Integrantes */
 .main-integrantes img {
-  transition: all .3 ease-in-out;
-}
-
-.main-integrantes img:hover {
-  transform: scale(0.9);
-}
+  transition: all .3 ease-in-out; }
+  .main-integrantes img:hover {
+    transform: scale(0.9); }
 
 /* biografia */
 .main-general p {
-  transition: all .3 ease-in-out;
-}
-
-.main-general p:hover {
-  background-color: rgba(0, 0, 0, 0.486);
-}
+  transition: all .3 ease-in-out; }
+  .main-general p:hover {
+    background-color: rgba(0, 0, 0, 0.486); }
 
 /* Musica  */
 h3 {
-  transition: all .3 ease-in-out;
-}
-
-h3:hover {
-  color: orange;
-}
+  transition: all .3 ease-in-out; }
+  h3:hover {
+    color: orange; }
 
 ul li a {
-  transition: all .3 ease-in-out;
-}
+  transition: all .3 ease-in-out; }
+  ul li a:hover {
+    font-family: 'Courier Prime', monospace;
+    text-decoration: overline; }
 
-ul li a:hover {
-  font-family: 'Courier Prime', monospace;
-  text-decoration: overline;
-}
+.ordenar {
+  margin: 10px 15px;
+  padding: 0px 2px; }
+
+.red-youtube {
+  color: red; }
+
+.red-twitter {
+  color: #40c0f3; }
+
+.red-facebook {
+  color: #2121df; }
+
+.red-instagram {
+  color: #e05f14; }
