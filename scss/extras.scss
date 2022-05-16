@@ -10,18 +10,18 @@
 
 
 // Maps
-$redes: (
-    youtube: red,
-    twitter: rgb(64, 192, 243),
-    facebook: rgb(33, 33, 223),
-    instagram: rgb(224, 95, 20)
+// $redes: (
+//     youtube: red,
+//     twitter: rgb(64, 192, 243),
+//     facebook: rgb(33, 33, 223),
+//     instagram: rgb(224, 95, 20)
 
-);
+// );
 
-@each $red, $color in $redes {
-    .red-#{$red} {
-        color:$color
-    }
+// @each $red, $color in $redes {
+//     .red-#{$red} {
+//         color:$color
+//     }
     
-}
+// }
 
