@@ -2,18 +2,8 @@
 
 /* Index */
 
-.foto-portada {
-    img {
-        transition: all .3 ease-in-out;
-    }
-
-    &:hover {
-        transform: scale(0.9);
-    }
-}
-
 .contenedor-caras img {
-    transition: all .3 ease-in-out;
+    transition: .3s ease all;
 
     &:hover {
         transform: scale(1.1);
@@ -22,7 +12,7 @@
 
 /* Integrantes */
 .main-integrantes img {
-    transition: all .3 ease-in-out;
+    transition: .3s ease all;
 
     &:hover {
         transform: scale(0.9);
@@ -34,7 +24,7 @@
 /* biografia */
 
 .main-general p {
-    transition: all .3 ease-in-out;
+    transition: .3s ease all;
 
 
     &:hover {
@@ -44,7 +34,7 @@
 
 /* Musica  */
 h3 {
-    transition: all .3 ease-in-out;
+    transition: .3s ease all;
 
     &:hover {
         color: orange
@@ -53,9 +43,9 @@ h3 {
 
 
 ul li a {
-    transition: all .3 ease-in-out;
+    transition: .3s ease all;
 
-    &:hover{
+    &:hover {
         font-family: 'Courier Prime', monospace;
         text-decoration: overline;
     }
